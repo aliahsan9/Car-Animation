@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+.car{
+    position:absolute;
+  bottom: 0;
+  top: 85vh;
+  animation: shakebody 1s infinite linear;
+}
+.wheel1 {
+    position: absolute;
+    top: 20vh;
+    left: 10.5vw;
+    animation: wheelrotation .1ms infinite linear;
+  }
+  .wheel2 {
+    position: absolute;
+    top: 21vh;
+    left: 50.5vw;
+    animation: wheelrotation .1ms infinite linear;
+  }
+  .track{
+    animation: trackmove .1s infinite linear;
+  }
+
+@keyframes wheelrotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wheelrotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes trackmove {
+  from {
+    transform:scalex(5);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shakebody
+{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
